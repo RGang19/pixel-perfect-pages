@@ -100,12 +100,15 @@ function Header() {
 
 function Hero() {
   return (
-    <section className="relative">
-      <div className="absolute inset-0 grid-bg opacity-50" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background" />
-      <div className="relative max-w-7xl mx-auto px-6 pt-12 pb-20">
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
-          <div>
+    <section className="relative overflow-hidden">
+      <div className="absolute inset-0">
+        <img src={heroTrio} alt="Neon Arena agents" className="w-full h-full object-cover object-center" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" />
+      </div>
+      <div className="absolute inset-0 grid-bg opacity-20" />
+      <div className="relative max-w-7xl mx-auto px-6 pt-20 pb-32 min-h-[680px] flex items-center">
+        <div className="max-w-xl">
             <span className="inline-block px-3 py-1 text-[10px] tracking-[0.3em] font-tech border border-primary/40 text-primary rounded-sm mb-6">BUILT FOR WEB3</span>
             <h1 className="font-display text-7xl md:text-8xl leading-[0.9] text-gradient glow-text">NEON<br/>ARENA</h1>
             <h2 className="font-display text-3xl md:text-4xl mt-6 text-foreground/90">
@@ -122,13 +125,8 @@ function Hero() {
                 <Box className="w-4 h-4" /> CREATE AI AGENT
               </button>
             </div>
-          </div>
-          <div className="relative">
-            <div className="absolute -inset-10 bg-gradient-to-br from-primary/30 via-accent/20 to-transparent blur-3xl" />
-            <img src={heroTrio} alt="Neon Arena agents" width={1536} height={1024} className="relative w-full rounded-2xl border border-primary/30 glow-primary object-cover" />
-            <div className="absolute top-6 right-6 font-display text-8xl text-primary/30 select-none">OG</div>
-          </div>
         </div>
+        <div className="hidden md:block absolute top-10 right-10 font-display text-9xl text-primary/30 select-none pointer-events-none">OG</div>
       </div>
     </section>
   );
