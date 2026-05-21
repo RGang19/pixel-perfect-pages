@@ -72,18 +72,38 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Pixel Perfect Pages extracts design elements from images to recreate landing pages with exact colors and assets." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Pixel Perfect Pages extracts design elements from images to recreate landing pages with exact colors and assets." },
+      { title: "AI Arena" },
+      {
+        name: "description",
+        content:
+          "Collect, train, and battle unique AI Agents in a Web3 arena. Own your journey. Rule the Arena.",
+      },
+      { name: "author", content: "AI Arena" },
+      { property: "og:title", content: "AI Arena" },
+      {
+        property: "og:description",
+        content:
+          "Collect, train, and battle unique AI Agents in a Web3 arena. Own your journey. Rule the Arena.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Pixel Perfect Pages extracts design elements from images to recreate landing pages with exact colors and assets." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fa020cb7-9a31-4e21-9493-76c561ec25d6/id-preview-d5c0f119--8122d6c5-96de-4e04-9873-b426913c361c.lovable.app-1779181243544.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fa020cb7-9a31-4e21-9493-76c561ec25d6/id-preview-d5c0f119--8122d6c5-96de-4e04-9873-b426913c361c.lovable.app-1779181243544.png" },
+      { name: "twitter:site", content: "@AIArena" },
+      { name: "twitter:title", content: "AI Arena" },
+      {
+        name: "twitter:description",
+        content:
+          "Collect, train, and battle unique AI Agents in a Web3 arena. Own your journey. Rule the Arena.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fa020cb7-9a31-4e21-9493-76c561ec25d6/id-preview-d5c0f119--8122d6c5-96de-4e04-9873-b426913c361c.lovable.app-1779181243544.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fa020cb7-9a31-4e21-9493-76c561ec25d6/id-preview-d5c0f119--8122d6c5-96de-4e04-9873-b426913c361c.lovable.app-1779181243544.png",
+      },
     ],
     links: [
       {
